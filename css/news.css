@@ -248,13 +248,18 @@ a:hover, a:focus {
 	margin-top: -5px;
 }
 
+
 .news_content:hover{
 	background: #4A5A7B;
 	text-decoration: none;
 }
 .news_content h1 {
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin: 0;
+ 	overflow: hidden;
+ 	white-space: nowrap;
+ 	font-weight: 100;
+ 	font-size: 18px;
+ 	margin-top: 6px;
 }
 .news_content p {
 	width: 360px;

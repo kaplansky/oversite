@@ -51,7 +51,14 @@ $(".result").click(function(){
 	$(".result").replaceWith("<div class='score'>1-1</div>")
 });
 
-
+$(".popup_content").magnificPopup({
+	type : 'image',
+	gallery : {
+		enabled : true
+	},
+	removalDelay : 300,
+	mainClass: 'mfp-fade'
+});
 	
 });
 
