@@ -136,7 +136,39 @@ a:hover, a:focus {
 	background: #FDE481;
 }
 
-.hero_page {
+.menu_media {
+	position: relative;
+}
+
+.menu_media ul {
+	position: absolute;
+	left:-9999px;
+	pacity:0;
+	height: 100px;
+	width: 96px;
+	background: none;
+	padding-left: 0;
+}
+
+.menu_media ul li {
+	padding-top: 1px;
+	float: none;
+	background-color: #FFD941;
+}
+
+.menu_media ul li a {
+	width: 96px;
+	padding: 5px 17px;
+}
+
+
+
+.menu_media:hover ul{
+	left: 0;
+	opacity: 1;
+}
+
+.page{
 	width: 660px;
 	min-height: 1244px;
 	height: 100%;
@@ -523,19 +555,15 @@ span.warn{
 
 .hero_descr h1 {
 	margin: 0;
-	font-family: "Big_Noodle_Titling_Cyr";
 	font-size: 60px;
 	font-weight: 100;
-	font-style: italic;
 	line-height: 45px;
 }
 
 .hero_role,.hero_role span, .hero_about {
-	font-family: "Big_Noodle_Titling_Cyr";
 	font-size: 30px;
-	font-style: italic;
 	line-height: 30px;
-	margin: 5px 0;
+	margin: 7px 0;
 }
 
 .hero_role span {
@@ -576,9 +604,15 @@ span.warn{
 	margin-left: 0;
 }
 
-.skill_name {
+.skill_name, .skill_option span, .hero_page ul span,
+.hero_guidename, .hero_guide .autor,.hero_guide .data,
+.hero_guide .view, .hero_descr h1,.hero_role,.hero_role span, .hero_about,
+.stream_quest{
 	font-family: "Big_Noodle_Titling_Cyr";
 	font-style: italic;
+}
+
+.skill_name {
 	font-size: 30px;
 	line-height: 30px;
 }
@@ -594,8 +628,6 @@ span.warn{
 }
 
 .skill_option span {
-	font-family: "Big_Noodle_Titling_Cyr";
-	font-style: italic;
 	font-size: 20px;
 }
 
@@ -619,6 +651,20 @@ span.red {
 .hero_ult .skill_name {
 	color:#74d6ff
 }
+
+.hero_page ul {
+	padding: 0;
+	margin-left: 15px;
+}
+
+.hero_page ul span {
+	font-size: 28px;
+}
+
+.hero_page ul li {
+	line-height: 18px;
+	margin-left: 15px;
+}
 .hero_guide {
 	display: inline-block;
 	float: left;
@@ -639,16 +685,12 @@ span.red {
 
 .hero_guidename{
 	font-size: 24px;
-	font-family: "Big_Noodle_Titling_Cyr";
-	font-style: italic;
 	line-height: 24px;
 	float: left;
 }
 
 .hero_guide .autor{
 	font-size: 18px;
-	font-family: "Big_Noodle_Titling_Cyr";
-	font-style: italic;
 	line-height: 24px;
 	color:#62b0d5
 }
@@ -659,8 +701,6 @@ a:hover {
 
 .hero_guide .data {
 	font-size: 16px;
-	font-family: "Big_Noodle_Titling_Cyr";
-	font-style: italic;
 	line-height: 24px;
 	font-weight: 100;
 	color: #a3a3a3;
@@ -670,8 +710,6 @@ a:hover {
 
 .hero_guide .view{
 	font-size: 16px;
-	font-family: "Big_Noodle_Titling_Cyr";
-	font-style: italic;
 	line-height: 24px;
 	font-weight: 100;
 	color: #a3a3a3;
@@ -679,3 +717,300 @@ a:hover {
 	display: inline-block;
 	margin-right: 5px;
 }
+
+.match_page {
+	padding: 0;
+}
+
+.match_item {
+	height: 100%;
+	border-bottom: 1px #A2BAEB solid;
+	width: 660px;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.match_item:hover {
+	background-color: #3A4660;
+}
+
+.one_team {
+	display: inline-block;
+	float: left;
+	width: 195px;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.one_team img {
+	width: 48px;
+	height: 38px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 7px;
+	margin-right: 4px;
+}
+
+.team_name {
+	color: #fff;
+	font-size: 16px;
+	margin-top: 15px;
+
+}
+
+.time {
+	display: inline-block;
+	text-align: center;
+	width: 85px;
+	height: 100%;
+}
+
+.data {
+	font-size: 12px;
+	color: #5C6274;
+}
+
+.time span {
+	font-size: 18px;
+	color: #91B5FF;
+	display: block;
+	margin-top: -7px;
+}
+
+.place {
+	font-size: 9px;
+	color: #5C6274;
+}
+
+.two_team {
+	float: right;
+	width: 190px;
+
+}
+
+.two_team img {
+	width: 48px;
+	height: 38px;
+	float: right;
+	margin-top: 8px;
+	margin-right: 7px;
+	margin-left: 4px;
+}
+
+.two_team .team_name {
+	float: right;
+	width: auto;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.time .live_match{
+	color: #FB6570;
+}
+
+.result {
+	width: 28px;
+	height: 22px;
+	margin-left: 29px;
+	font-size: 19px;
+	color: #fff;
+	line-height: 27px;
+}
+
+.result:hover {
+	color: #536998;
+}
+
+.score {
+	color: #91B5FF;
+	line-height: 22px;
+	font-family: "OpenSansRegular";
+}
+
+.stream_page {
+	min-height: 650px;
+	padding: 0;
+}
+
+.stream_item {
+	width: 135px;
+	height: 80px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	margin-top: 10px;
+	margin-left: 23px;
+	margin-bottom: 10px;
+}
+
+.border:hover {
+	border: 1px #91B5FF solid;
+}
+
+.border {
+	background-clip: padding-box;
+	width: 135px;
+	height: 80px;
+	z-index: 50;
+	position: absolute;
+	background: -moz-linear-gradient(top, transparent 0%, rgba(0,0,0,0.85) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0,0,0,0.75)));
+	background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.85) 100%);
+	background: -o-linear-gradient(top, transparent 0%, rgba(0,0,0,0.85) 100%);
+	background: -ms-linear-gradient(top, transparent 0%, rgba(0,0,0,0.85) 100%);
+	background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.85) 100%);
+}
+
+.stream_name {
+	width: 80px;	
+	color: #fff;
+	position: absolute;
+	top: 50px;
+	left: 5px;
+	font-family: "Big_Noodle_Titling_Cyr", sans-serif;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  z-index: 100;
+}
+
+.views_icon {
+	position: absolute;
+	top: 52px;
+	left: 85px;
+	font-size: 12px;
+	color: #6D9EFF;
+	z-index: 100;
+}
+
+.steam_views {
+	position: absolute;
+	width: 35px;
+	top: 53px;
+	left: 98px;
+	font-size: 12px;
+	color: #6D9EFF;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+.stream_item img {
+	width: 135px;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	background-clip: padding-box;
+	z-index: 0;
+}
+
+.stream_quest {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 24px;
+}
+
+.stream_quest a:hover {
+	color: #74d6ff;
+}
+
+.vidoe_page {
+	padding: 0;
+	min-height: 650px;
+}
+
+.pagination {
+	height: 40px;
+}
+.pagination_up {
+	position: absolute;
+	top: 50px;
+	right: 20px;
+}
+
+.pagination_down {
+	width: 660px;
+  height: 50px;
+  background-color: #283550;
+  padding-left: 505px;
+  padding-top: 15px;
+  display: inline-block;
+  float: left;
+}
+
+.page_num {
+	display: inline-block;
+	float: left;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.page_num:hover{
+	background: #A2BAEB;
+	color: #fff;
+}
+
+.page_num a{
+	width: 25px;
+	height: 25px;
+	border: 1px #A2BAEB solid;
+	text-align: center;
+	display: block;
+}
+
+.video_item, .video_pic img {
+	width: 181px;
+	height: 100px;
+}
+.video_item {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 27px;
+	height: 100px;
+}
+.video_item .border {
+	width: 181px;
+	height: 100px;
+	background: none;
+}
+.video_item .border:hover {
+	color: #354565;
+}
+.video_tittle {
+	font-size: 12px;
+	color: #fff;
+	width: 181px;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gallery_page {
+	padding: 0;
+}
+.images {
+	padding: 0;
+}
+
+.image_item {
+	float: left;
+	display: block;
+	width: 110px;
+	height: 130px;
+	margin-left: 18px;
+	margin-bottom: 10px;
+}
+.images img{
+	width: 110px;
+	height: 130px;
+}
+
+a {
+	cursor: pointer;
+}
+
+

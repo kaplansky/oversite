@@ -85,6 +85,10 @@ a:hover, a:focus {
 	text-decoration: none;
 }
 
+a {
+	cursor: pointer;
+}
+
 .container {
 	width: 945px;
 	padding: 0;
@@ -126,6 +130,38 @@ a:hover, a:focus {
 
 .menu_item a:hover {
 	background: #FDE481;
+}
+
+.menu_media {
+	position: relative;
+}
+
+.menu_media ul {
+	position: absolute;
+	left:-9999px;
+	pacity:0;
+	height: 100px;
+	width: 96px;
+	background: none;
+	padding-left: 0;
+}
+
+.menu_media ul li {
+	padding-top: 1px;
+	float: none;
+	background-color: #FFD941;
+}
+
+.menu_media ul li a {
+	width: 96px;
+	padding: 5px 17px;
+}
+
+
+
+.menu_media:hover ul{
+	left: 0;
+	opacity: 1;
 }
 
 .sec_news {
@@ -381,6 +417,10 @@ a:hover, a:focus {
 	height: 58px;
 	border-bottom: 1px #A2BAEB solid ;
 	//text-align: center;
+}
+
+.match_item:hover {
+	background-color: #3A4660;
 }
 
 .one_team {

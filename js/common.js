@@ -59,6 +59,15 @@ $(".popup_content").magnificPopup({
 	removalDelay : 300,
 	mainClass: 'mfp-fade'
 });
+
+$(".image_item").magnificPopup({
+	type : 'image',
+	gallery : {
+		enabled : true
+	},
+	removalDelay : 300,
+	mainClass: 'mfp-fade'
+});
 	
 });
 

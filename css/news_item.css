@@ -54,6 +54,10 @@ a {
 	color: #fff;
 }
 
+a {
+	cursor: pointer;
+}
+
 body {
 	font-family: sans-serif;
 	font-size: 16px;
@@ -136,7 +140,37 @@ a:hover, a:focus {
 	background: #FDE481;
 }
 
-.hero_page {
+.menu_media {
+	position: relative;
+}
+
+.menu_media ul {
+	position: absolute;
+	left:-9999px;
+	pacity:0;
+	height: 100px;
+	width: 96px;
+	background: none;
+	padding-left: 0;
+}
+
+.menu_media ul li {
+	padding-top: 1px;
+	float: none;
+	background-color: #FFD941;
+}
+
+.menu_media ul li a {
+	width: 96px;
+	padding: 5px 17px;
+}
+
+.menu_media:hover ul{
+	left: 0;
+	opacity: 1;
+}
+
+.sec_news {
 	width: 660px;
 	min-height: 1244px;
 	height: 100%;
@@ -507,4 +541,7 @@ span.warn{
  3
 }
 
+.vidoe_page {
+	padding: 0;
+}
 
