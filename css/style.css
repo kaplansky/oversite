@@ -128,7 +128,7 @@ a:hover, a:focus {
   font-size: 25px;
   display: inline-block;
   height: 50px;
-  padding: 5px 24.5px;
+  padding: 5px 32px;
   color: #060606;
 }
 
@@ -145,7 +145,7 @@ a:hover, a:focus {
 	left:-9999px;
 	pacity:0;
 	height: 100px;
-	width: 96px;
+	width: 111px;
 	background: none;
 	padding-left: 0;
 }
@@ -157,7 +157,7 @@ a:hover, a:focus {
 }
 
 .menu_media ul li a {
-	width: 96px;
+	width: 111px;
 	padding: 5px 17px;
 }
 
@@ -352,7 +352,7 @@ a:hover, a:focus {
 	display: inline-block;
 	float: left;
 	padding-top: 5px;
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
 	margin: 0;
 	overflow: hidden;
@@ -607,7 +607,7 @@ span.warn{
 .skill_name, .skill_option span, .hero_page ul span,
 .hero_guidename, .hero_guide .autor,.hero_guide .data,
 .hero_guide .view, .hero_descr h1,.hero_role,.hero_role span, .hero_about,
-.stream_quest{
+.stream_quest, .guide_categories {
 	font-family: "Big_Noodle_Titling_Cyr";
 	font-style: italic;
 }
@@ -677,6 +677,7 @@ span.red {
 	border: 1px #91B5FF solid;
 	display: block;
 	padding: 3px;
+	position: relative;
 }
 
 .hero_guide a:hover {
@@ -687,12 +688,23 @@ span.red {
 	font-size: 24px;
 	line-height: 24px;
 	float: left;
+	overflow: hidden;
+	width: 280px;
 }
 
 .hero_guide .autor{
 	font-size: 18px;
 	line-height: 24px;
 	color:#62b0d5
+}
+
+.guide_categories {
+	position: absolute;
+	top: 50px;
+	right: 20px;
+	font-size: 22px;
+	line-height: 24px;
+	color:#62b0d5;
 }
 
 a:hover {
@@ -1013,4 +1025,12 @@ a {
 	cursor: pointer;
 }
 
+.guide_page {
+	padding: 0;
+	min-height: 650px;
+	max-height: 1200px;
+}
 
+.guide_page .hero_guide {
+	margin-left: 20px;
+}

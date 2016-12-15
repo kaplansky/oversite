@@ -43,8 +43,7 @@
 			<ul>
 				<li class = "menu_item"><a href="index.html">главная</a></li>
 				<li class = "menu_item"><a href="news.html">новости</a></li>
-				<li class = "menu_item"><a href="#">статьи</a></li>
-				<li class = "menu_item"><a href="#">гайды</a></li>
+				<li class = "menu_item"><a href="gallery.html">гайды</a></li>
 				<li class = "menu_item"><a href="cybersport.html">киберспорт</a></li>
 				<li class = "menu_item"><a href="#">форум</a></li>
 				<li class = "menu_item"><a href="stream.html">стримы</a></li>
@@ -134,7 +133,7 @@
 								</div>
 							</a>
 						</div>
-						<div class = "more_button"><a href="#">Увидеть больше</a></div>
+						<div class = "more_button"><a href="news.html">Увидеть больше</a></div>
 					</div>
 					<div class="tab_item news_content">
 						<div class="news_content">
@@ -192,7 +191,7 @@
 								</div>
 							</a>
 						</div>
-						<div class = "more_button"><a href="#">Увидеть больше</a></div>
+						<div class = "more_button"><a href="news.html">Увидеть больше</a></div>
 					</div>
 					<div class="tab_item news_content">
 						<div class="news_content">
@@ -206,7 +205,7 @@
 								</div>
 							</a>
 						</div>
-						<div class = "more_button"><a href="#">Увидеть больше</a></div>
+						<div class = "more_button"><a href="news.html">Увидеть больше</a></div>
 					</div>
 					<div class="tab_item news_content">
 						<div class="news_content">
@@ -220,7 +219,7 @@
 								</div>
 							</a>
 						</div>
-						<div class = "more_button"><a href="#">Увидеть больше</a></div>
+						<div class = "more_button"><a href="news.html">Увидеть больше</a></div>
 					</div>
 					<div class="tab_item news_content">
 						<div class="news_content">
@@ -234,11 +233,12 @@
 								</div>
 							</a>
 						</div>
-						<div class = "more_button"><a href="#">Увидеть больше</a></div>
+						<div class = "more_button"><a href="news.html">Увидеть больше</a></div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!--
 		<div class="sec_forum">
 			<div class="top_title">
 				<a href="#">Форум</a>
@@ -344,9 +344,10 @@
 			</div>
 			<div class = "more_button"><a href="#">Увидеть больше</a></div>
 		</div>
+		-->
 		<div class="sec_guide">
 			<div class="top_title">
-				<a href="#">Гайды</a>
+				<a href="guide.html">Гайды</a>
 			</div>
 			<div class="guide_item">
 				<a href="#">
@@ -519,7 +520,7 @@
 					<div class="time">
 						<div class="data">22.08</div>
 						<div class="result">
-							<i class="fa fa-trophy" aria-hidden="true"></i>
+							<i class="fa fa-trophy" aria-hidden="true" id = "inner"></i>
 						</div>
 						<div class="place">ESL One New York</div>
 					</div>
@@ -538,7 +539,7 @@
 					<div class="time">
 						<div class="data">22.08</div>
 						<div class="result">
-							<i class="fa fa-trophy" aria-hidden="true"></i>
+							<i class="fa fa-trophy" aria-hidden="true" ></i>
 						</div>
 						<div class="place">ESL One New York</div>
 					</div>
@@ -836,11 +837,11 @@
 					<div class="video_tittle">Overwatch Moments #34</div>	
 				</a>
 			</div>
-			<div class = "more_button  button_videos"><a href="#">Увидеть больше</a></div>
+			<div class = "more_button  button_videos"><a href="videos.html">Увидеть больше</a></div>
 		</div>
 		<div class="sec_gallery">
 			<div class="top_title">
-				<a href="#">Галерея</a>
+				<a href="gallery.html">Галерея</a>
 			</div>
 			<div class="courusel">
 				<ul class="images">
@@ -871,7 +872,6 @@
 	<div class="hidden"></div>
 
 	<div class="loader">
-		<div class="loader_inner"></div>
 	</div>
 
 	<!--[if lt IE 9]>
@@ -880,14 +880,10 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-
 	<script>
-	$( "a > .reuslt" ).click(function(e) {
-	e.preventDefault();
- 	e.stopPropagation();
-});
-</script>
-
+	inner.onclick = function(e) { e.preventDefault(); }
+	</script>
+	
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/animate/animate-css.js"></script>

@@ -43,13 +43,11 @@ $(function() {
 	$(".tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
 
-	$( " a .result" ).click(function(e) {
- 	e.stopPropagation();
-});
 
-$(".result").click(function(){
+$(".result").off("click").on("click", (function(){
 	$(".result").replaceWith("<div class='score'>1-1</div>")
-});
+	return false;
+}));
 
 $(".popup_content").magnificPopup({
 	type : 'image',
@@ -74,6 +72,6 @@ $(".image_item").magnificPopup({
 $(window).load(function() {
 
 	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
+	$(".loader").delay(300).fadeOut("slow");
 
 });

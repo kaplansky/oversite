@@ -35,20 +35,7 @@ html.js .loader {
 	width: 100%;
 	z-index: 9999;
 }
-html.js .loader_inner {
-	background-image: url("../img/preloader.gif");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #fff;
-	height: 60px;
-	width: 60px;
-	margin-top: -30px;
-	margin-left: -30px;
-	left: 50%;
-	top: 50%;
-	position: absolute;
-}
+
 
 body {
 	font-family: sans-serif;
@@ -124,7 +111,7 @@ a {
   font-size: 25px;
   display: inline-block;
   height: 50px;
-  padding: 5px 24.5px;
+  padding: 5px 32px;
   color: #060606;
 }
 
@@ -141,7 +128,7 @@ a {
 	left:-9999px;
 	pacity:0;
 	height: 100px;
-	width: 96px;
+	width: 111px;
 	background: none;
 	padding-left: 0;
 }
@@ -153,7 +140,7 @@ a {
 }
 
 .menu_media ul li a {
-	width: 96px;
+	width: 111px;
 	padding: 5px 17px;
 }
 
@@ -209,11 +196,11 @@ a {
 }
 
 .news_tab {
-	padding: 10px 20.5px;
+	padding: 10px 17.5px;
   display: inline-block;
   font-size: 14px;
   margin: 0;
-  margin-left: -12px;
+  margin-left: -4.5px;
 }
 
 .news_tab:first-child {
@@ -222,6 +209,7 @@ a {
 
 .news_tab:hover {
 	background: #4A5A7B;
+	cursor: pointer;
 }
 
 .news_pic img{
@@ -238,7 +226,7 @@ a {
 }
 
 .news_content:hover{
-	background: #4A5A7B;
+	background: #3A4660;
 	text-decoration: none;
 }
 .news_content h1 {
@@ -290,7 +278,7 @@ a {
 }
 
 .more_button:hover {
-	background: #4A5A7B;
+	background: #3A4660;
 }
 
 .forum_item {
@@ -300,7 +288,7 @@ a {
 }
 
 .forum_item:hover {
-	background: #4A5A7B;
+	background: #3A4660;
 }
 
 .top_title {
@@ -367,7 +355,7 @@ a {
 	display: inline-block;
 	float: left;
 	padding-top: 5px;
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
 	margin: 0;
 	overflow: hidden;
@@ -397,7 +385,7 @@ a {
 }
 
 .guide_item:hover {
-	background: #4A5A7B;
+	background: #3A4660;
 }
 
 .button_guide {
@@ -464,7 +452,8 @@ a {
 	font-size: 18px;
 	color: #91B5FF;
 	display: block;
-	margin-top: -7px;
+	margin-top: -3px;
+	line-height: 25px;
 }
 
 .place {

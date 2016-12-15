@@ -129,7 +129,7 @@ a:hover, a:focus {
   font-size: 25px;
   display: inline-block;
   height: 50px;
-  padding: 5px 24.5px;
+  padding: 5px 32px;
   color: #060606;
 }
 
@@ -146,7 +146,7 @@ a:hover, a:focus {
 	left:-9999px;
 	pacity:0;
 	height: 100px;
-	width: 96px;
+	width: 111px;
 	background: none;
 	padding-left: 0;
 }
@@ -158,7 +158,7 @@ a:hover, a:focus {
 }
 
 .menu_media ul li a {
-	width: 96px;
+	width: 111px;
 	padding: 5px 17px;
 }
 
@@ -248,12 +248,17 @@ a:hover, a:focus {
 	text-align: center;
 	display: block;
 }
+
+a {
+	cursor: pointer;
+}
+
 .news_tab {
-	padding: 10px 20.5px;
+	padding: 10px 17.5px;
   display: inline-block;
   font-size: 14px;
   margin: 0;
-  margin-left: -12px;
+  margin-left: -4.5px;
 }
 
 .news_tab:first-child {
@@ -262,25 +267,26 @@ a:hover, a:focus {
 
 .news_tab:hover {
 	background: #4A5A7B;
+	cursor: pointer;
 }
 
 .news_pic img{
-	height: 165px;
-	width: 275px;
+	height: 125px;
+	width: 245px;
 	margin: 10px 10px;
 	display: inline-block;
 	float: left;
 }
 
 .news_content {
-	height: 200px;
+	height: 147px;
 	border-bottom: 1px #A2BAEB solid;
 	margin-top: -5px;
 }
 
 
 .news_content:hover{
-	background: #4A5A7B;
+	background: #3A4660;
 	text-decoration: none;
 }
 .news_content h1 {
@@ -288,17 +294,18 @@ a:hover, a:focus {
  	overflow: hidden;
  	white-space: nowrap;
  	font-weight: 100;
- 	font-size: 18px;
+ 	font-size: 20px;
  	margin-top: 6px;
 }
 .news_content p {
 	width: 360px;
- 	height: 130px;
- 	float: left;
- 	margin: 0;
- 	text-align: justify;
- 	overflow: hidden;
- 	text-overflow: ellipsis;
+  height: 85px;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .text {
@@ -409,7 +416,7 @@ a:hover, a:focus {
 	display: inline-block;
 	float: left;
 	padding-top: 5px;
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
 	margin: 0;
 	overflow: hidden;
